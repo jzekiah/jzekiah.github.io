@@ -1,0 +1,294 @@
+/* --- 1. GLOBAL STYLES & FONT --- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light background for contrast */
+    line-height: 1.6;
+    color: #333; /* Dark gray text */
+}
+
+/* Color Variables */
+:root {
+    --deep-blue: #0A192F; /* Main background/Dark color */
+    --gold: #FFD700; /* Accent color/Gold */
+    --light-blue: #2A406D; /* Secondary blue */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gold);
+}
+
+/* --- 2. HEADER & NAVIGATION --- */
+header {
+    background-color: var(--deep-blue);
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: var(--gold);
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+.cta-link {
+    border: 1px solid var(--gold);
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-link:hover {
+    background-color: var(--gold);
+    color: var(--deep-blue);
+}
+
+/* --- 3. HERO SECTION --- */
+.hero-section {
+    background-color: var(--deep-blue);
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-section .intro-line {
+    color: var(--gold);
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    color: var(--gold);
+    margin: 0 0 10px 0;
+}
+
+.hero-section h2 {
+    font-size: 1.8em;
+    font-weight: 300;
+    color: lightgray;
+    margin-bottom: 20px;
+}
+
+.summary-text {
+    max-width: 700px;
+    margin: 20px auto 30px auto;
+    font-size: 1.1em;
+}
+
+.hero-actions .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 0 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.hero-actions .primary {
+    background-color: var(--gold);
+    color: var(--deep-blue);
+}
+
+.hero-actions .primary:hover {
+    background-color: #e5c100; /* slightly darker gold */
+}
+
+.hero-actions .secondary {
+    border: 2px solid var(--gold);
+    color: var(--gold);
+}
+
+.hero-actions .secondary:hover {
+    background-color: var(--gold);
+    color: var(--deep-blue);
+}
+
+/* --- 4. SECTION STYLING (General) --- */
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section:nth-child(even) { /* Academic and Contact sections */
+    background-color: white;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: var(--deep-blue);
+    position: relative;
+    display: inline-block;
+}
+
+.section h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 3px;
+    background: var(--gold);
+    margin: 10px auto 0;
+}
+
+/* --- 5. ACADEMIC SECTION --- */
+.journey-card {
+    background-color: var(--light-blue);
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.journey-card h3 {
+    color: var(--gold);
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.journey-card .role {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.journey-card ul {
+    list-style-type: '⚡ '; /* Simple lightning bolt unicode */
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.journey-card li {
+    margin-bottom: 8px;
+}
+
+/* --- 6. SKILLS SECTION --- */
+.skills-section {
+    background-color: #f4f4f4;
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    background-color: white;
+    border: 2px solid var(--deep-blue);
+    color: var(--deep-blue);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.skill-item:hover {
+    background-color: var(--gold);
+    border-color: var(--gold);
+    color: var(--deep-blue);
+}
+
+/* --- 7. CONTACT & FOOTER --- */
+.contact-section {
+    background-color: white;
+}
+
+.contact-info {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.contact-info a {
+    color: var(--deep-blue);
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    color: var(--gold);
+}
+
+footer {
+    background-color: var(--deep-blue);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+}
+
+/* --- 8. RESPONSIVENESS (Mobile Adjustments) --- */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav {
+        margin-top: 10px;
+    }
+    nav a {
+        margin: 0 10px;
+        display: inline-block;
+    }
+    
+    .hero-section {
+        padding: 80px 0 60px 0;
+    }
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+    .hero-section h2 {
+        font-size: 1.4em;
+    }
+    .hero-actions a {
+        display: block;
+        margin: 10px auto;
+        width: 80%;
+    }
+    .section {
+        padding: 60px 0;
+    }
+    .skills-grid {
+        gap: 10px;
+    }
+    .skill-item {
+        padding: 10px 20px;
+    }
+}
