@@ -1,0 +1,25 @@
+# ------------------------------
+# 1. Site Settings
+# ------------------------------
+title: Jzekiah's Personal Site
+description: |
+  Welcome to my GitHub Pages website. 
+  A place for my portfolio and thoughts.
+baseurl: "" # The subpath of your site, e.g. /blog
+url: "https://jzekiah.github.io" # The base hostname & protocol for your site
+
+# ------------------------------
+# 2. Theme Configuration (The Upgrade!)
+# ------------------------------
+# We are using a theme to instantly improve the design.
+# You can change 'jekyll-theme-cayman' to other official themes 
+# like 'jekyll-theme-primer' or 'jekyll-theme-minimal'.
+remote_theme: pages-themes/cayman@v0.2.0
+
+# ------------------------------
+# 3. Build Settings
+# ------------------------------
+# These settings tell Jekyll which files to process and ignore.
+plugins:
+  - jekyll-remote-theme
+  
